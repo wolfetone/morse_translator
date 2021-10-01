@@ -11,5 +11,13 @@ ALPHABET = {"a":".-","b":"-...","c":"-.-.",
             "v":"...-","w":".--","x":"-..-", 
             "y":"-.--","z":"--.."}
 
-message = "morse code"
+def encrypt(message):
+    encrypted_cipher = ""
+    for letter in message:
+        if letter != " ":
+            encrypted_cipher += ALPHABET[letter] + " "
+        return encrypted_cipher
+
+print(encrypt("a"))
+
 
