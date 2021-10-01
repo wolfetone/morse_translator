@@ -16,8 +16,8 @@ def encrypt(message):
     for letter in message:
         if letter != " ":
             encrypted_cipher += ALPHABET[letter] + " "
-        return encrypted_cipher
+    return encrypted_cipher
 
-print(encrypt("a"))
+print(encrypt("hello"))
 
 
